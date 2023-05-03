@@ -20,7 +20,7 @@
     <section class="position-absolute top-10 start-50 translate-middle-x w-75 pt-5">
         
         <h2 class="text-success">Customer List</h2>
-        <a class="text-success" href="/"><h5>Back to form</h5></a>
+        <a class="text-success" href="/form"><h5>Back to form</h5></a>
 
         <table class="table text-success" id="example">
             <thead>
@@ -37,7 +37,7 @@
             </tr>
             </thead>
             <tbody>
-                <% allCustomersToList.forEach(customer => { %>
+                <% allUserCustomersToList.forEach(customer => { %>
 
                     <% const fulladdress = `${customer.houseNumber}+${customer.street}+${customer.townCity}+${customer.postCode}`%>
 
@@ -61,7 +61,10 @@
                 
             </tbody>
         </table>
-        <a class="text-success" href="/"><h5>Back to form</h5></a>
+
+        <a class="text-success" href="/form"><h5>Back to form</h5></a>
+        <a class="text-success" href="/">Log Out</a>
+
     </section>
 </body>
 </html>

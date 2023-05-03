@@ -16,40 +16,47 @@
         <form method="post" action="/addcustomer">
             <div class="mb-1"> 
                 <label for="company-name" class="form-label">Company Name</label>
-                <input name="companyName" type="text" class="form-control" id="company-name">
+                <input name="companyName" type="text" class="form-control" id="company-name" required="true">
             </div>
             <div class="mb-1">
                 <label for="first-name" class="form-label">First Name</label>
-                <input name="firstName" type="text" class="form-control" id="first-name">
+                <input name="firstName" type="text" class="form-control" id="first-name" required="true">
             </div>
             <div class="mb-1">
                 <label for="last-name" class="form-label">Last Name</label>
-                <input name="lastName" type="text" class="form-control" id="last-name">
+                <input name="lastName" type="text" class="form-control" id="last-name" required="true">
             </div>
             <div class="mb-1">
                 <label for="contact-number" class="form-label">Contact Number</label>
-                <input name="contactNumber" type="text" class="form-control" id="contact-number">
+                <input name="contactNumber" type="text" class="form-control" id="contact-number" required="true">
             </div>
             <div class="mb-1">
                 <label for="house-number" class="form-label">House/Flat No:</label>
-                <input name="houseNumber" type="text" class="form-control" id="house-number">
+                <input name="houseNumber" type="text" class="form-control" id="house-number" required="true">
             </div>
             <div class="mb-1">
                 <label for="street" class="form-label">Street</label>
-                <input name="street" type="text" class="form-control" id="street">
+                <input name="street" type="text" class="form-control" id="street" required="true">
             </div>
             <div class="mb-1">
                 <label for="town-city" class="form-label">Town/City</label>
-                <input name="townCity" type="text" class="form-control" id="town-city">
+                <input name="townCity" type="text" class="form-control" id="town-city" required="true">
             </div>
             <div class="mb-3">
                 <label for="post-code" class="form-label">Post Code</label>
-                <input name="postCode" type="text" class="form-control" id="post-code">
+                <input name="postCode" type="text" class="form-control" id="post-code" required="true">
             </div>
 
             <button type="submit" class="btn btn-success">Add Customer</button>
+
             <a class="text-success m-lg-3" href="/customerlist">See Customer List</a>
+            <a class="text-success" href="/">Log Out</a>
+
         </form>
+
+        <% if(locals.newCustomerMessage) { %>
+            <h6 class="pt-3"><%= newCustomerMessage %></h6>
+        <% } %>
 
     </section>
 
