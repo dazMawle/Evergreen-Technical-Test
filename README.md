@@ -25,3 +25,5 @@ Set up:
 * On MongoDB site (cloud.mongodb.com) add your IP address to your IP access list (Security > Network Access > IP Access List)
 * Get and provide a Google Maps API key (developers.google.com) and also put that into your .env file
 * Run 'npm run dev' and go to http://localhost:3000 in your browser
+
+* [Demo video](https://drive.google.com/file/d/1yK3GL80j2lZmL6aLCi0NxwioQtufeaxZ/view?usp=sharing)
